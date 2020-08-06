@@ -78,12 +78,3 @@ const run = async () => {
 
 
 run();
-
-/**
- *  5 billion videos // https://www.omnicoreagency.com/youtube-statistics/ // source from 2018
- * >>> format((6000000000/73786976294838206464),'.16f')
- * >>> '0.0000000000677626'
- * >>> ~'0.00000000677626' percent chance to find video 
- **/
-
-
