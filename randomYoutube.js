@@ -66,8 +66,10 @@ const run = async () => {
           await getUrl(generateId()).then((res) => {
               if(res.includes("Success")) {
                 successes++
+                console.log("SUCCESS: " + res)
               }
               console.log(res + " counter: " + counter + " successes: " + successes)
+             // process.stdout.write(res + " counter: " + counter + "successes: " + successes + "\r");
           })
         } catch (e) {
           console.log("Error:", e.message);
@@ -76,6 +78,5 @@ const run = async () => {
       counter++
   }
 }
-
 
 run();
