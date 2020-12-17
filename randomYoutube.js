@@ -14,7 +14,7 @@ const fetch = require('node-fetch');
      let index = Math.floor((Math.random() * 63) + 1)
      id = id + alphabet[index]
    }
-   return id;
+     return id;
  }
 
 /**
@@ -33,7 +33,6 @@ const checkResponse = (data) => {
  * @returns {string|Promise<T>} response
  */
  const getUrl = async (id) => {
-   // let v_id = "MZJ0GI8fo4Q" -> valid Id
    let url = "https://youtube.com/watch?v=" + id
 
    const response = await fetch(url)
@@ -69,7 +68,6 @@ const run = async () => {
                 console.log("SUCCESS: " + res)
               }
               console.log(res + " counter: " + counter + " successes: " + successes)
-             // process.stdout.write(res + " counter: " + counter + "successes: " + successes + "\r");
           })
         } catch (e) {
           console.log("Error:", e.message);
